@@ -1,0 +1,11 @@
+{
+  "name": "local-site",
+  "version": "1.0.0",
+  "description": "搭建 node 服务，访问本地站点文件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wqjiao",
+  "license": "ISC"
+}
