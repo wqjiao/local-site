@@ -1,14 +1,11 @@
 let http = require('http');
 let fs = require('fs'); // 引入文件读取模块
-// 本地站点文件存放目录路径 local-site
-let documentRoot = 'D:/工作文档/workShop/local-site';
 
 let server = http.createServer(function (req, res) {
 
     // 客户端输入的url，例如：输入localhost:8888/index.html 相当于 url = /index.html
-    // D:/工作文档/workShop/local-site/index.html 
-    let file = documentRoot + req.url;
-    // console.log(url);
+    // D:/工作文档/workShop/local-site/VueNodeServer/index.html 
+    let file = __dirname + req.url;
     
     /**
      * @param {String} file 文件路径
